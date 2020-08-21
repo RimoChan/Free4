@@ -1,10 +1,14 @@
 import os
+import time
+import random
 
 import fire
 
 
 class go():
     def compress(self, 文件名):
+        几十秒 = random.randint(10, 90)
+        time.sleep(几十秒)
         os.remove(文件名)
         主名, 扩展名 = os.path.splitext(文件名)
         open(f'{主名}.rimo', 'w')
